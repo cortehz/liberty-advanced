@@ -8,7 +8,7 @@ const config = {
   siteDescription: "A Psychotherapy Website", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  googleAnalyticsID: "UA-134151606-1", // GA tracking ID.
   disqusShortname: "libertythera", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
