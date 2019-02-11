@@ -1,15 +1,7 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import {
-  FaMapMarker,
-  FaEnvelopeO,
-  FaPaperPlaneO,
-  FaWrench,
-  FaChevronDown,
-  FaChevronUp,
-} from 'react-icons/lib/fa'
-import { TiCodeOutline } from 'react-icons/lib/ti'
-import './MainNav.css'
+import React from "react";
+import { Link } from "gatsby";
+import { FaEnvelope, FaAlignRight, FaHome } from "react-icons/fa";
+import "./MainNav.css";
 
 const ListLink = props => (
   <li className="c-main-nav__elem">
@@ -23,39 +15,39 @@ const ListLink = props => (
       {props.children}
     </Link>
   </li>
-)
+);
 
 class MainNav extends React.Component {
   constructor(props) {
-    super(props)
-    this.toggleMenu = this.toggleMenu.bind(this)
-    this.closeMenu = this.closeMenu.bind(this)
+    super(props);
+    this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
     this.state = {
       links: [
-        { to: '/', text: 'home', icon: FaMapMarker },
-        { to: '/about/', text: 'about us', icon: FaWrench },
-        { to: '/services/', text: 'services', icon: FaPaperPlaneO },
-        { to: '/blog/', text: 'blog', icon: FaEnvelopeO },
-        { to: '/contact/', text: 'contact', icon: FaEnvelopeO },
+        { to: "/", text: "home", icon: FaHome },
+        { to: "/about/", text: "about us", icon: FaEnvelope },
+        { to: "/services/", text: "services", icon: FaEnvelope },
+        { to: "/blog/", text: "blog", icon: FaEnvelope },
+        { to: "/contact/", text: "contact", icon: FaEnvelope }
       ],
-      mainNavModifierClassName: '',
-      mobileDetailsNav: null,
-    }
+      mainNavModifierClassName: "",
+      mobileDetailsNav: null
+    };
   }
 
   closeMenu() {
-    console.log('closeMenu()')
+    console.log("closeMenu()");
     if (this.state.mobileDetailsNav) {
       this.setState(() => ({
-        mainNavModifierClassName: '',
-        mobileDetailsNav: null,
-      }))
+        mainNavModifierClassName: "",
+        mobileDetailsNav: null
+      }));
     }
   }
 
   toggleMenu() {
-    let mobileDetailsNav = null
-    let mainNavModifierClassName = ''
+    let mobileDetailsNav = null;
+    let mainNavModifierClassName = "";
 
     if (!this.state.mobileDetailsNav) {
       mobileDetailsNav = (
@@ -67,14 +59,14 @@ class MainNav extends React.Component {
             </ListLink>
           ))}
         </div>
-      )
-      mainNavModifierClassName = 'c-main-nav--is-hidden'
+      );
+      mainNavModifierClassName = "c-main-nav--is-hidden";
     }
 
     this.setState(() => ({
       mainNavModifierClassName: mainNavModifierClassName,
-      mobileDetailsNav: mobileDetailsNav,
-    }))
+      mobileDetailsNav: mobileDetailsNav
+    }));
   }
 
   render() {
@@ -93,9 +85,9 @@ class MainNav extends React.Component {
           >
             <a href="#" className="c-main-nav__link">
               {this.state.mainNavModifierClassName ? (
-                <FaChevronUp />
+                <FaEnvelope />
               ) : (
-                <FaChevronDown />
+                <FaAlignRight />
               )}
               <span className="c-main-nav__text">Close</span>
             </a>
@@ -103,8 +95,8 @@ class MainNav extends React.Component {
         </ul>
         {this.state.mobileDetailsNav}
       </div>
-    )
+    );
   }
 }
 
-export default MainNav
+export default MainNav;
