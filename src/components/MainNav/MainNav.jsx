@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "gatsby";
 import {
-  FaEnvelope,
+  FaTelegramPlane,
   FaAlignRight,
   FaHome,
   FaInfo,
-  FaRegEdit
+  FaRegEdit,
+  FaTimes,
+  FaUserFriends
 } from "react-icons/fa";
 import "./MainNav.css";
 
@@ -31,10 +33,10 @@ class MainNav extends React.Component {
     this.state = {
       links: [
         { to: "/", text: "home", icon: FaHome },
-        { to: "/about/", text: "about us", icon: FaEnvelope },
+        { to: "/about/", text: "about us", icon: FaUserFriends },
         { to: "/services/", text: "services", icon: FaInfo },
         { to: "/blog/", text: "blog", icon: FaRegEdit },
-        { to: "/contact/", text: "contact", icon: FaEnvelope }
+        { to: "/contact/", text: "contact", icon: FaTelegramPlane }
       ],
       mainNavModifierClassName: "",
       mobileDetailsNav: null
@@ -91,7 +93,7 @@ class MainNav extends React.Component {
           >
             <a href="#" className="c-main-nav__link">
               {this.state.mainNavModifierClassName ? (
-                <FaEnvelope />
+                <FaTimes />
               ) : (
                 <FaAlignRight />
               )}
