@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import { FaEnvelope, FaAlignRight, FaHome } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaAlignRight,
+  FaHome,
+  FaInfo,
+  FaRegEdit
+} from "react-icons/fa";
 import "./MainNav.css";
 
 const ListLink = props => (
@@ -26,8 +32,8 @@ class MainNav extends React.Component {
       links: [
         { to: "/", text: "home", icon: FaHome },
         { to: "/about/", text: "about us", icon: FaEnvelope },
-        { to: "/services/", text: "services", icon: FaEnvelope },
-        { to: "/blog/", text: "blog", icon: FaEnvelope },
+        { to: "/services/", text: "services", icon: FaInfo },
+        { to: "/blog/", text: "blog", icon: FaRegEdit },
         { to: "/contact/", text: "contact", icon: FaEnvelope }
       ],
       mainNavModifierClassName: "",
