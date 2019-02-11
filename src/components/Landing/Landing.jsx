@@ -11,10 +11,7 @@ const Landing = () => {
         <div className="container">
           <div className="col-md-12">
             <div className="col-md-8">
-              <h3 className="subtitle">
-                Welcome to
-                {siteConfig.siteTitle}!
-              </h3>
+              <h3 className="subtitle">Welcome to {siteConfig.siteTitle}!</h3>
             </div>
             <div style={{ display: "flex", justifyContent: "flex-end" }}>
               <hr

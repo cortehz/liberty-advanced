@@ -23,10 +23,11 @@
 .c-main-nav__link {
     border: none;
     color: #666;
-    display: inline-block;
+    display: flex;
     font-size: 1em;
     padding: .6em .5em;
     text-decoration: none;
+    align-content: center;
 }
 
 .c-main-nav__link:hover {
@@ -100,7 +101,7 @@
 }
 
 .c-main-nav--is-open .c-main-nav__link {
-    display: block;
+    display: flex;
     padding: .6em .3em;
 }
 
