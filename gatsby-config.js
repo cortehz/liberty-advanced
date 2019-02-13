@@ -37,8 +37,7 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 690
@@ -65,6 +64,12 @@ module.exports = {
         color: config.themeColor
       }
     },
+    {
+      resolve: "gatsby-plugin-layout",
+      options: {
+        component: require.resolve(`./src/layout/index.js`)
+      }
+    },
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-twitter",
@@ -79,8 +84,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: "minimal-ui",
-        icons: [
-          {
+        icons: [{
             src: "/logos/logo-192x192.png",
             sizes: "192x192",
             type: "image/png"
@@ -119,24 +123,28 @@ module.exports = {
           }
         }
       `,
-        feeds: [
-          {
-            serialize(ctx) {
-              const { rssMetadata } = ctx.query.site.siteMetadata;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
-                categories: edge.node.frontmatter.tags,
-                date: edge.node.fields.date,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [
-                  { "content:encoded": edge.node.html },
-                  { author: config.userEmail }
-                ]
-              }));
-            },
-            query: `
+        feeds: [{
+          serialize(ctx) {
+            const {
+              rssMetadata
+            } = ctx.query.site.siteMetadata;
+            return ctx.query.allMarkdownRemark.edges.map(edge => ({
+              categories: edge.node.frontmatter.tags,
+              date: edge.node.fields.date,
+              title: edge.node.frontmatter.title,
+              description: edge.node.excerpt,
+              url: rssMetadata.site_url + edge.node.fields.slug,
+              guid: rssMetadata.site_url + edge.node.fields.slug,
+              custom_elements: [{
+                  "content:encoded": edge.node.html
+                },
+                {
+                  author: config.userEmail
+                }
+              ]
+            }));
+          },
+          query: `
             {
               allMarkdownRemark(
                 limit: 1000,
@@ -163,9 +171,8 @@ module.exports = {
               }
             }
           `,
-            output: config.siteRss
-          }
-        ]
+          output: config.siteRss
+        }]
       }
     }
   ]

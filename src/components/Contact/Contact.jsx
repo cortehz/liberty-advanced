@@ -1,45 +1,45 @@
-import React, { Component } from 'react'
-import './Contact.css'
+import React from "react";
+import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section class="contact-us">
-      <div class="wrap-contact-us">
-        <div class="headline">
-          <h2 class="headline-contact">Contact us</h2>
-          <p class="subtitle contact-headline-text">
+    <section className="contact-us">
+      <div className="wrap-contact-us">
+        <div className="headline">
+          <h2 className="headline-contact">Contact us</h2>
+          <p className="subtitle contact-headline-text">
             Proin iaculis purus consequat sem cure.
           </p>
         </div>
-        <div class="forms">
+        <div className="forms">
           <form>
-            <div class="wrap-forms">
-              <div class="text-forms">
+            <div className="wrap-forms">
+              <div className="text-forms">
                 <input
-                  class="text-form-style"
+                  className="text-form-style"
                   type="text"
                   placeholder="Your name *"
                 />
                 <input
-                  class="text-form-style your-mail"
+                  className="text-form-style your-mail"
                   type="text"
                   placeholder="Your e-mail *"
                 />
                 <input
-                  class="text-form-style"
+                  className="text-form-style"
                   type="text"
                   placeholder="Subject"
                 />
               </div>
-              <div class="textarea-form">
+              <div className="textarea-form">
                 <textarea
-                  class="textarea-form-style"
+                  className="textarea-form-style"
                   placeholder="Your message *"
                 />
               </div>
             </div>
-            <div class="wrap-button">
-              <button class="button-style send-message" type="submit">
+            <div className="wrap-button">
+              <button className="button-style send-message" type="submit">
                 Send message
               </button>
             </div>
@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

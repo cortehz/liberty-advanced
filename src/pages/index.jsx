@@ -12,20 +12,23 @@ import Contact from "../components/Contact/Contact";
 
 import config from "../../data/SiteConfig";
 import { GlobalStyle } from "../components/Commons";
+import Layout from "../layout";
 
 class Index extends React.Component {
   render() {
     return (
-      <Fragment>
-        <GlobalStyle />
-        <Helmet title={config.siteTitle} />
-        <SEO />
-        <MainHeader />
-        <Landing />
-        <AboutUs />
-        <Services />
-        <Contact />
-      </Fragment>
+      <Layout>
+        <Fragment>
+          <GlobalStyle />
+          <Helmet title={config.siteTitle} />
+          <SEO />
+          <MainHeader />
+          <Landing />
+          <AboutUs />
+          <Services />
+          <Contact />
+        </Fragment>
+      </Layout>
     );
   }
 }

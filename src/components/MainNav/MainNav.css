@@ -120,7 +120,7 @@
     }
 }
 
-@media screen and (max-width: 403px) {
+@media screen and (max-width: 432px) {
     .c-main-header {
         display: flex;
         flex-direction: column;

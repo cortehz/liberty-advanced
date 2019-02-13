@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import './Services.css'
+import React, { Component } from "react";
+import "./Services.css";
 
 const Services = () => {
   return (
     <section className="section-about">
       <div className="about-uss">
-        <h2 style={{ textAlign: 'center' }}>OUR SERVICES</h2>
-        <div class="about-hr">
+        <h2 style={{ textAlign: "center" }}>OUR SERVICES</h2>
+        <div className="about-hr">
           <hr />
         </div>
         <p>
@@ -41,7 +41,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

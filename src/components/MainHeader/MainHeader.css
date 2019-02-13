@@ -1,10 +1,9 @@
 .c-main-header {
     justify-content: space-between;
-    margin: 0 auto 1.2rem;
+    margin: 1rem auto 0rem;
     max-width: 60rem;
     width: 100%;
-    height: 20%;
-
+    height: 15vh;
 }
 
 .c-main-header__logo {
@@ -24,7 +23,7 @@
 
 }
 
-@media screen and (max-width: 1028px) {
+/* @media screen and (max-width: 1028px) {
     .c-main-header {
         margin: 3%;
 
@@ -34,4 +33,4 @@
         margin-right: 5%;
 
     }
-}
+} */

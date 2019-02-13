@@ -95,6 +95,12 @@
 
 @media only screen and (max-width: 649px) {
     #about .wrapper {
-        padding: 10rem 2rem 8rem;
+        /* padding: 10rem 2rem 8rem; */
+    }
+}
+
+@media only screen and (max-width: 649px) {
+    #about .wrapper {
+        padding: 0rem;
     }
 }
