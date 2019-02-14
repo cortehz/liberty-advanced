@@ -2,7 +2,7 @@
 title: "The Fairy's Witches"
 cover: "https://unsplash.it/1152/300/?random?FaityWitch"
 category: "something"
-date: "January 20, 2019"
+date: "2019-01-01"
 ---
 
 # Eram mora tuas in inter ferens caterva

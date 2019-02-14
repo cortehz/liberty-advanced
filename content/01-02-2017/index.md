@@ -1,7 +1,7 @@
 ---
 title: "Multis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri"
 cover: "https://unsplash.it/400/300/?random?TheFallenTime"
-date: "January 20, 2019"
+date: "2019-01-01"
 category: "another one"
 tags:
   - test

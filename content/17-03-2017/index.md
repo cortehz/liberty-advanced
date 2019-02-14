@@ -2,7 +2,7 @@
 title: "The Butterfly of the Edge"
 cover: "https://unsplash.it/1152/300/?random?TheButterflyoftheEdge"
 category: "tech"
-date: "January 20, 2019"
+date: "2019-01-01"
 tags:
   - programming
   - more tags

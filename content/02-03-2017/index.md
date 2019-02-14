@@ -2,7 +2,7 @@
 title: "Random project 4 With Super Long Title Phase One"
 cover: "https://unsplash.it/1152/300/?random?SuperLong"
 category: "random"
-date: "January 20, 2019"
+date: "2019-01-01"
 tags:
   - say hi
 ---

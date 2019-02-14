@@ -1,7 +1,7 @@
 ---
 title: "Birch in the Roses"
 cover: "https://unsplash.it/1152/300/?random?BirchintheRoses"
-date: "January 20, 2019"
+date: "2019-01-01"
 category: "tech"
 tags:
   - tag
