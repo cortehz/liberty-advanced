@@ -4,19 +4,29 @@
     justify-content: center;
 }
 
+.blog-header {
+    background-color: rgba(72, 198, 202, 0.424);
+    padding-top: 1%;
+    padding-bottom: 2%;
+    z-index: 2000;
+    height: 100%;
+}
+
+
+
 .blog-parent {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
     justify-content: center;
 }
 
 .dash {
     display: inline-block;
     width: 50px;
-    border-top: 2px solid #bb0a1a;
+    border-top: 1px solid #ffffff;
 }
 
 .next-articles {

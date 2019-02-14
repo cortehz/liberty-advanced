@@ -2,7 +2,7 @@
 title: "Multis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri"
 cover: "https://unsplash.it/400/300/?random?AngelsofMist"
 category: "test3"
-date: "01/03/2017"
+date: "January 20, 2019"
 tags:
   - cheese
   - other

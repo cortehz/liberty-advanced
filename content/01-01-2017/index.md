@@ -1,5 +1,5 @@
 ---
-title: "Multis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri"
+title: "ultis timidus hic si auctor hausit. Suos taedasque, malis est nitente sceleri"
 cover: "https://unsplash.it/400/300/?random?BoldMage"
 date: "January 20, 2019"
 category: "tech"
