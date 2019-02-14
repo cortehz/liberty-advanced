@@ -34,7 +34,7 @@ export default class PostTemplate extends React.Component {
           <SEO postPath={slug} postNode={postNode} postSEO />
           <MainHeader />
           <div className="blog-parent">
-            <h1 style={{ alignSelf: "center", marginBottom: "0px" }}>
+            <h1 style={{ alignSelf: "flex-start", marginBottom: "0px" }}>
               {post.title}
             </h1>
             <div style={{ alignSelf: "flex-start", marginTop: "5px" }}>
