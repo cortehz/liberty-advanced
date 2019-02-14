@@ -18,7 +18,6 @@ export default class PostTemplate extends React.Component {
     const { slug } = this.props.pageContext;
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
-    const { nextTitle, nextSlug, prevSlug, prevTitle } = postNode.fields;
     if (!post.id) {
       post.id = slug;
     }
@@ -122,7 +121,7 @@ export const pageQuery = graphql`
         prevTitle
         prevSlug
         slug
-        date(formatString: "DD MMMM, YYYY")
+        date
       }
     }
   }
