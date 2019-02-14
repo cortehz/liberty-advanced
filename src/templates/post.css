@@ -3,3 +3,28 @@
     flex-direction: column;
     justify-content: center;
 }
+
+.blog-parent {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 730px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dash {
+    display: inline-block;
+    width: 50px;
+    border-top: 2px solid #bb0a1a;
+}
+
+.next-articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.next-articles a {
+    text-decoration: none;
+    text-decoration-color: none;
+}

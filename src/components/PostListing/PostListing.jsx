@@ -32,11 +32,7 @@ class PostListing extends React.Component {
               </div>
               <ul className="details">
                 <li className="author">
-                  <a href="#">{post.timeToRead}</a>
-                </li>
-                <li className="date">{post.date}</li>
-                <li className="tags">
-                  <ul />
+                  <a href={post.path}>{post.timeToRead} min read</a>
                 </li>
               </ul>
             </div>
