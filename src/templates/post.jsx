@@ -65,7 +65,7 @@ export default class PostTemplate extends React.Component {
                     marginBottom: "0",
                     marginTop: "3px",
                     color: "white",
-                    fontWeight: "lighter"
+                    fontWeight: "normal"
                   }}
                 >
                   <span style={{ fontStyle: "italic" }}>by</span>{" "}
@@ -75,7 +75,7 @@ export default class PostTemplate extends React.Component {
                   style={{
                     alignSelf: "flex-start",
                     color: "white",
-                    fontWeight: "lighter"
+                    fontWeight: "normal"
                   }}
                 >
                   {post.date}
